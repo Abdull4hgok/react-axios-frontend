@@ -72,9 +72,9 @@ function Register() {
         <form action="" id="Register" method="post" onSubmit={handleSubmit}>
         <h1>Register</h1>
         <p className="item">
-          <label for="name"> Name </label>
+          <label htmlFor="name"> Name </label>
           <input
-           class="input-group-text"
+           className="input-group-text"
             type="text"
             name="name"
             id="name"
@@ -84,9 +84,9 @@ function Register() {
           />
         </p>
         <p className="item">
-          <label for="email"> Email </label>
+          <label htmlFor="email"> Email </label>
           <input
-           class="input-group-text"
+           className="input-group-text"
             type="email"
             name="email"
             id="email"
@@ -95,9 +95,9 @@ function Register() {
           />
         </p>
         <p className="item">
-          <label for="password"> Password </label>
+          <label htmlFor="password"> Password </label>
           <input
-           class="input-group-text"
+           className="input-group-text"
             type="password"
             name="password"
             id="password"
@@ -106,9 +106,9 @@ function Register() {
           />
         </p>
         <p className="item" >
-          <label for="password_confirmation"> Password confirmation </label>
+          <label htmlFor="password_confirmation"> Password confirmation </label>
           <input 
-          class="input-group-text"
+          className="input-group-text"
             type="password"
             name="password_confirmation"
             id="password_confirmation"
@@ -118,7 +118,7 @@ function Register() {
         </p>
         <p className="item">
 
-          <input class="btn btn-success" type="submit" value="Register"  />
+          <input className="btn btn-success" type="submit" value="Register"  />
         </p>
       </form>
       

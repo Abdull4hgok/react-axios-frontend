@@ -35,21 +35,15 @@ function App() {
           <div className="col-md-1">
             <Products />
           </div>
-          {loggedIn ? (
-            <div className="col-md-8">
-              <Logout onLogout={handleLogout} />
-            </div>
-          ) : (
+          {(loggedIn && <div className="col-md-8"><Logout onLogout={handleLogout} /></div>) || (
             <>
               <div className="col-md-1">
                 <Login onLogin={handleLogin} />
               </div>
               <div className="col-md-8">
-
                   <div className="col-md-1">
                     <Register />
                   </div>
-
               </div>
             </>
           )}
