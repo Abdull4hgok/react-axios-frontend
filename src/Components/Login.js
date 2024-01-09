@@ -37,8 +37,8 @@ function Login({ onLogin }) {
           setValidationError(response.data.status);
         } else {
           Swal.fire({
-            text: response.data.status['Account not found.'],
-            icon: 'error',
+            text: ['Account not found.'],
+            icon: 'error'
           });
         }
         console.log(response.data.error);
